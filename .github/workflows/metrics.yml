@@ -19,6 +19,6 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           curl --request GET \
-          --url "https://api.github.com/search?q=JATIC%20type:pr%20repo:Trusted-AI/adversarial-robustness-toolbox" \
+          --url "https://api.github.com/search/pulls?q=JATIC%20is:pr%20repo:Trusted-AI/adversarial-robustness-toolbox" \
           --header "Accept: application/vnd.github+json" \
           --header "Authorization: Bearer $GH_TOKEN"
